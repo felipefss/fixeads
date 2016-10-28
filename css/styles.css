@@ -1,0 +1,170 @@
+body {
+    background-color: #ddd;
+    font-size: 16px;
+}
+
+/* HEADER */
+#logo-img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.navbar {
+    border: none;
+    background-color: #ddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000080;
+    height: 4px;
+}
+
+.navbar-default .navbar-toggle {
+	border: none;
+    vertical-align: center;
+}
+
+#nav-list {
+	margin-top: 35px;
+}
+
+#nav-list a {
+    text-align: center;
+    color: #000080;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#nav-list a:hover {
+    background-color: #c0c0c0;
+}
+/* HEADER END */
+
+/* FOOTER */
+.panel-footer {
+	border: 0;
+    background-color: #a0a0a0;
+    color: #fff;
+    margin-top: 35px;
+}
+
+.panel-footer div.row {
+	float: left;
+}
+
+.panel-footer div.container {
+    width: auto;
+}
+
+#copyright {
+	float: right;
+}
+/* FOOTER END */
+
+/* MAIN CONTENT */
+h1 {
+    color: #a0a0a0;
+    font-style: italic;
+}
+
+.something {
+	background-color: #fff;
+    height: 200px;
+    margin: 15px 0 15px 0;
+}
+
+.diff-block {
+    background-color: #777;
+    height: 200px;
+    margin: 15px 0 15px 0;
+}
+
+.row > div {
+    padding: 0;
+}
+/* MAIN CONTENT END */
+
+
+/************* Tablets - sm *************/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* HEADER */
+    #logo-img {
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+    }
+    
+    .navbar-header {
+        float: none;
+    }
+    
+    .container-fluid > .navbar-collapse {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    
+    .navbar-collapse {
+        padding-left: 0;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+    }
+    
+    .navbar-collapse.collapse {
+	   display: none !important;
+    }
+    
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    
+    .collapsing {
+        overflow: hidden!important;
+    }
+    
+    .navbar-nav {
+        float: none;
+    }
+    
+    .navbar-nav > li {
+        float: none;
+    }
+    
+    #nav-list {
+        margin-top: 0;
+    }
+    /* HEADER END */
+}
+
+/************** Mobile - xs **************/
+@media (max-width: 767px) {
+    /* HEADER */
+    #logo-img {
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+    }
+    
+    .navbar-collapse {
+        border-bottom: 1px solid transparent;
+    }
+    
+    #nav-list {
+        margin-top: 0;
+    }
+    /* HEADER END */
+    
+    /* FOOTER */
+    .panel-footer div.row {
+        float: none;
+        text-align: center;
+    }
+    
+    #copyright {
+        float: none;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    /* FOOTER END */
+}
